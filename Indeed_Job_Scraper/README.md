@@ -20,7 +20,7 @@
   
   soup = BeautifulSoup(page.text, 'html.parser')
   
- ** Parse the job listings and store them in a data structure. ** 
+**Parse the job listings and store them in a data structure.** 
   
   job_listings = []
   
