@@ -24,9 +24,9 @@
   
   job_listings = []
   
-  Extract relevant information (job title, company, location, salary, etc.) from the HTML.
+  >**Extract relevant information (job title, company, location, salary, etc.) from the HTML.**
   
-  Store the data in a Python data structure (e.g., a list of dictionaries).
+  >**Store the data in a Python data structure (e.g., a list of dictionaries).**
 
 # Storing Scraped Data in MongoDB:
 
@@ -38,7 +38,7 @@
   
   collection = db['job_listings']
 
-  Store the job listings in the MongoDB collection.
+  >**Store the job listings in the MongoDB collection.**
 
 We can use the pymongo library to connect to a MongoDB database and store the scraped job listings. 
 
@@ -46,7 +46,7 @@ We can use the pymongo library to connect to a MongoDB database and store the sc
 
   django-admin startproject job_search_project
   
-  Create a Django app for job listings:  [shell]
+# Create a Django app for job listings:  [shell]
   
   python manage.py startapp job_listings 
 
@@ -54,9 +54,9 @@ We can use the pymongo library to connect to a MongoDB database and store the sc
 
    import numpy as np
 
-   Query the MongoDB database to retrieve salary data.
+   >**Query the MongoDB database to retrieve salary data.**
 
-   Calculate the average salary.
+   >**Calculate the average salary.**
    
    salaries = [job['salary'] for job in job_listings]  # Replace with actual salary data.
    
