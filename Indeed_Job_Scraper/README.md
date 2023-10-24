@@ -19,12 +19,12 @@ url = "https://www.indeed.com/jobs?q=Python+developer"
 page = requests.get(url)
 soup = BeautifulSoup(page.text, 'html.parser')
 
-# Parse the job listings and store them in a data structure.
+Parse the job listings and store them in a data structure.
 job_listings = []
 
-# Extract relevant information (job title, company, location, salary, etc.) from the HTML.
+Extract relevant information (job title, company, location, salary, etc.) from the HTML.
 
-# Store the data in a Python data structure (e.g., a list of dictionaries).
+Store the data in a Python data structure (e.g., a list of dictionaries).
 
 2) Storing Scraped Data in MongoDB:
 
@@ -34,15 +34,15 @@ job_listings = []
   db = client['your_database']
   collection = db['job_listings']
 
-# Store the job listings in the MongoDB collection.
+Store the job listings in the MongoDB collection.
 
 We can use the pymongo library to connect to a MongoDB database and store the scraped job listings. 
 
-# Creating a Django Admin Panel: [shell]
+ 3) Creating a Django Admin Panel: [shell]
 
 django-admin startproject job_search_project
 
-# Create a Django app for job listings:  [shell]
+Create a Django app for job listings:  [shell]
 
 python manage.py startapp job_listings 
 
@@ -50,10 +50,10 @@ python manage.py startapp job_listings
 
    import numpy as np
 
-# Query the MongoDB database to retrieve salary data.
+   Query the MongoDB database to retrieve salary data.
 
-# Calculate the average salary.
-  salaries = [job['salary'] for job in job_listings]  # Replace with actual salary data.
-  average_salary = np.mean(salaries)
+   Calculate the average salary.
+   salaries = [job['salary'] for job in job_listings]  # Replace with actual salary data.
+   average_salary = np.mean(salaries)
 
 
