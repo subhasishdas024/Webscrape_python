@@ -12,19 +12,19 @@
 
 # Web Scraping Indeed.com for Job Listings:
 
-import requests
-from bs4 import BeautifulSoup
-
-url = "https://www.indeed.com/jobs?q=Python+developer"
-page = requests.get(url)
-soup = BeautifulSoup(page.text, 'html.parser')
-
-Parse the job listings and store them in a data structure. (comment)
-job_listings = []
-
-Extract relevant information (job title, company, location, salary, etc.) from the HTML.
-
-Store the data in a Python data structure (e.g., a list of dictionaries).
+  import requests
+  from bs4 import BeautifulSoup
+  
+  url = "https://www.indeed.com/jobs?q=Python+developer"
+  page = requests.get(url)
+  soup = BeautifulSoup(page.text, 'html.parser')
+  
+  Parse the job listings and store them in a data structure. 
+  job_listings = []
+  
+  Extract relevant information (job title, company, location, salary, etc.) from the HTML.
+  
+  Store the data in a Python data structure (e.g., a list of dictionaries).
 
 # Storing Scraped Data in MongoDB:
 
@@ -34,7 +34,7 @@ Store the data in a Python data structure (e.g., a list of dictionaries).
   db = client['your_database']
   collection = db['job_listings']
 
-Store the job listings in the MongoDB collection.
+  Store the job listings in the MongoDB collection.
 
 We can use the pymongo library to connect to a MongoDB database and store the scraped job listings. 
 
