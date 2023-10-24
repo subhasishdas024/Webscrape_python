@@ -58,7 +58,7 @@ We can use the pymongo library to connect to a MongoDB database and store the sc
 
    >**Calculate the average salary.**
    
-   salaries = [job['salary'] for job in job_listings]  >**Replace with actual salary data.**
+   salaries = [job['salary'] for job in job_listings]  # Replace with actual salary data.
    
    average_salary = np.mean(salaries)
 
