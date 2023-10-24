@@ -22,13 +22,13 @@
   
   soup = BeautifulSoup(page.text, 'html.parser')
   
- \\ Parse the job listings and store them in a data structure. 
+  Parse the job listings and store them in a data structure. 
   
   job_listings = []
   
- \\ Extract relevant information (job title, company, location, salary, etc.) from the HTML.
+  Extract relevant information (job title, company, location, salary, etc.) from the HTML.
   
- \\ Store the data in a Python data structure (e.g., a list of dictionaries).
+  Store the data in a Python data structure (e.g., a list of dictionaries).
 
 # Storing Scraped Data in MongoDB:
 
