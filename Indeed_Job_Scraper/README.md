@@ -19,7 +19,7 @@ url = "https://www.indeed.com/jobs?q=Python+developer"
 page = requests.get(url)
 soup = BeautifulSoup(page.text, 'html.parser')
 
-Parse the job listings and store them in a data structure.
+Parse the job listings and store them in a data structure. (comment)
 job_listings = []
 
 Extract relevant information (job title, company, location, salary, etc.) from the HTML.
@@ -40,11 +40,11 @@ We can use the pymongo library to connect to a MongoDB database and store the sc
 
  # Creating a Django Admin Panel: [shell]
 
-django-admin startproject job_search_project
-
-Create a Django app for job listings:  [shell]
-
-python manage.py startapp job_listings 
+  django-admin startproject job_search_project
+  
+  Create a Django app for job listings:  [shell]
+  
+  python manage.py startapp job_listings 
 
 # Calculating the Average Salary Using NumPy:
 
@@ -53,7 +53,9 @@ python manage.py startapp job_listings
    Query the MongoDB database to retrieve salary data.
 
    Calculate the average salary.
+   
    salaries = [job['salary'] for job in job_listings]  # Replace with actual salary data.
+   
    average_salary = np.mean(salaries)
 
 
